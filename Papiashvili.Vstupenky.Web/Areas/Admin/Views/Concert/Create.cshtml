@@ -1,0 +1,26 @@
+﻿@model Concert
+
+@{
+    ViewData["Title"] = "Concert - Create";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label class="form-label">Nazev</label>
+        <input class="form-control" asp-for="Nazev">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Popis</label>
+        <input class="form-control" asp-for="Popis">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Data</label>
+        <input class="form-control" asp-for="Data">
+        </di
+    <div class="mb-3">
+        <label class="form-label">ImageSrc</label>
+        <input class="form-control" asp-for="ImageSrc">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Регистрация";
+}
+
+<h1>Registration</h1>
+
+
+
+<form method="post">
+    <div class="mb-3">
+        <label for="loginEmail" class="form-label">Ener your Login or Email</label>
+        <input type="text" class="form-control" id="loginEmail" name="loginEmail" required>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label"> Enter your Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Enter</button>
+</form>
+
+<input type="checkbox" id="popupToggle" class="popup-checkbox">
+<div class="popup">
+    <label for="popupToggle" class="popup-close">&#10005;</label>
+    <div class="popup-content">
+        Пользователь успешно зарегистрирован.
+    </div>
+</div>
+
+@section Styles
+    {
+    <link rel="stylesheet" href="~/css/site2.css" asp-append-version="true" />
+}
